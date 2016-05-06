@@ -1,0 +1,19 @@
+{
+  "name": "country-info-app",
+  "version": "0.0.1",
+  "description": "A demo app for NYCDA",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowriderkyle/country-info-app.git"
+  },
+  "author": "Kyle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snowriderkyle/country-info-app/issues"
+  },
+  "homepage": "https://github.com/snowriderkyle/country-info-app#readme"
+}
