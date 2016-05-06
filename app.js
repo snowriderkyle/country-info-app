@@ -1,4 +1,4 @@
-var countryname = process.argv[2]
+var countryname = process.argv[2]//Json file is case sensitive! Maybe handle this?
 var fs = require ('fs');
 
 fs.readFile( './countries.json', function( error, filedata ) {
@@ -8,7 +8,7 @@ fs.readFile( './countries.json', function( error, filedata ) {
 	}
 	// Store our filedata in var as json
 	var jsondata = JSON.parse (filedata) 
-
+// loop through the json to match country to paramater
 	jsondata.forEach ( function ( country ) {
 		if ( country.name == countryname) { 
 			console.log ("Country: " + country.name);
