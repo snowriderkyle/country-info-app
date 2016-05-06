@@ -1,4 +1,4 @@
-var countryName = process.argv[2]
+var countryname = process.argv[2]
 var fs = require ('fs');
 
 fs.readFile( './countries.json', function( error, filedata ) {
@@ -8,5 +8,13 @@ fs.readFile( './countries.json', function( error, filedata ) {
 	}
 	// Store our filedata in var as json
 	var jsondata = JSON.parse (filedata) 
-console.log (jsondata)
-})
+
+	jsondata.forEach ( function ( country ) {
+		if ( country.name == countryname) { 
+			console.log ("Country: " + country.name);
+			console.log('Top level domain: ' + country.topLevelDomain)// The TLD field is an array an may contain more.
+		}
+	} )
+ 
+	
+} )
