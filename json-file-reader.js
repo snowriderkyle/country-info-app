@@ -1,6 +1,5 @@
 var fs = require ('fs')
 var countryname = process.argv[2]
-var naam = process.argv[3]
 
 function read(file){
 	fs.readFile( './countries.json', function( error, filedata ) {
@@ -21,11 +20,6 @@ function read(file){
  
 	
 } )
-
-
-
-
-
 }
-console.log(naam )
+
 module.exports.readFile = read
